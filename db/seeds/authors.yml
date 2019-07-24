@@ -1,0 +1,9 @@
+<% (1..100).each do |i| %>
+-
+  name: "<%= Faker::Book.author %>"
+  author_bio: "<%= Faker::Lorem.sentence(3) %>"
+  profile_pic: "<%= Faker::LoremPixel.image("730x411") %>"
+  academics: "<%= Faker::Lorem.sentence(3) %>"
+  awards: "<%= Faker::Lorem.word %>"
+
+<% end %>

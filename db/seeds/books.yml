@@ -1,0 +1,11 @@
+<% (1..500).each do |i| %>
+-
+  book_name: "<%= Faker::Book.title %>"
+  short_description: "<%= Faker::Lorem.sentence(1) %>"
+  long_description: "<%= Faker::Lorem.sentence(3) %>"
+  book_chapter_index: "<%= Faker::Lorem.sentence(1) %>"
+  date_of_publication: "<%= Faker::Date.between(10.years.ago, Date.today) %>"
+  genre: "<%= Faker::Book.genre %>,<%= Faker::Book.genre %>"
+  author_id: "<%= rand 1..100 %>"
+
+<% end %>

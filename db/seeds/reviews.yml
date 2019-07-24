@@ -1,0 +1,8 @@
+<% (1..250).each do |i| %>
+-
+  name_of_reviewer: "<%= Faker::Book.title %>"
+  star_rating: "<%= rand 1.0..5.0 %>"
+  review_title: "<%= Faker::Lorem.sentence(3) %>"
+  review_description: "<%= Faker::Lorem.sentence(1) %>"
+
+<% end %>
